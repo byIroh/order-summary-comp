@@ -1,3 +1,73 @@
+body {
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  font-family: 'Red Hat Display', sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  max-width: 25rem;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1.75rem 2.75rem 2.5rem;
+}
+
+.heading {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.65rem;
+  font-weight: 900;
+  padding: 0.25rem 0 0.60rem;
+}
+
+.description {
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  padding: 0 0.60rem;
+}
+
+.plan-section {
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 1.25rem 0 1.75rem;
+  padding: 1.25rem;
+}
+
+.plan-description {
+  flex-grow: 1;
+  padding: 0 1.25rem;
+  text-align: start;
+}
+.plan-name {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.card-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proceed-btn {
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  padding: 0.75rem;
+  width: 100%;
+}
+
 
 /* Frontend Mentor Attribution */
 .attribution {

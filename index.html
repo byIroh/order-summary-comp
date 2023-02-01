@@ -9,26 +9,36 @@
 	<title>Frontend Mentor | Order summary card</title>
 
 	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-	Order Summary
-
-	You can now listen to millions of songs, audiobooks, and podcasts on any
-	device anywhere you like!
-
-	Annual Plan
-	$59.99/year
-
-	Change
-
-	Proceed to Payment
-	Cancel Order
-
-	<div class="attribution">
+	<main>
+		<div class="card">
+			<div class="card-img-container">
+				<img class="card-img" src="images/illustration-hero.svg" alt="">
+			</div>
+			<div class="card-body">
+				<h1 class="heading">Order Summary</h1>
+				<p class="description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+				<div class="plan-section">
+					<img src="images/icon-music.svg" alt="">
+					<span class="plan-description">
+						<p class="plan-name">Annual Plan</p>
+						<p class="plan-price">$59.99/year</p>
+					</span>
+					<a class="change-plan" href="#">Change</a>
+				</div>
+				<form class="card-form" action="/" method="post">
+					<input class="proceed-btn" type="submit" value="Proceed to Payment" name="proceed">
+					<input class="cancel-btn" type="submit" value="Cancel Order" name="cancel">
+				</form>
+			</div>
+		</div>
+	</main>
+	<!-- <footer class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
 		Coded by <a href="https://www.github.com/byIroh">byIroh</a>.
-	</div>
+	</footer> -->
 </body>
 </html>
