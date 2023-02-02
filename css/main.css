@@ -10,12 +10,12 @@ body {
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
-  max-width: 25rem;
+  max-width: 24rem;
   overflow: hidden;
 }
 
 .card-body {
-  padding: 1.75rem 2.75rem 2.5rem;
+  padding: 1.75rem 2.75rem 1.25rem;
 }
 
 .heading {
@@ -27,8 +27,7 @@ body {
 
 .description {
   color: hsl(224, 23%, 55%);
-  font-size: 1rem;
-  padding: 0 0.60rem;
+  font-size: 0.92rem;
 }
 
 .plan-section {
@@ -37,18 +36,30 @@ body {
   border-radius: 0.75rem;
   display: flex;
   justify-content: space-around;
-  margin: 1.25rem 0 1.75rem;
-  padding: 1.25rem;
+  margin: 1.25rem 0 1.50rem;
+  padding: 1.21rem;
 }
 
 .plan-description {
   flex-grow: 1;
-  padding: 0 1.25rem;
+  padding: 0 1.21rem;
   text-align: start;
 }
 .plan-name {
   color: hsl(223, 47%, 23%);
-  font-weight: 900;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.plan-price {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.9rem;
+}
+
+.change-plan {
+  color: hsl(245, 75%, 52%);
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .card-form {
@@ -63,8 +74,21 @@ body {
   border: none;
   border-radius: 0.5rem;
   color: hsl(0, 0%, 100%);
+  font-size: 0.9rem;
   font-weight: 700;
   padding: 0.75rem;
+  margin: 0 0 0.5rem;
+  width: 100%;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.75rem;
+  margin: 0.5rem 0 0;
   width: 100%;
 }
 
