@@ -1,14 +1,20 @@
 body {
-  align-items: center;
   background-color: hsl(225, 100%, 94%);
-  display: flex;
-  flex-direction: column;
   font-family: 'Red Hat Display', sans-serif;
-  justify-content: center;
   text-align: center;
 }
 
-.bg-pattern-desktop {
+body,
+.plan-section,
+.card-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bg-pattern-desktop,
+.bg-pattern-mobile {
   height: 50%;
   position: absolute;
   top: 0;
@@ -19,17 +25,11 @@ body {
 
 .bg-pattern-mobile {
   display: none;
-  height: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   max-width: 24rem;
   overflow: hidden;
 }
@@ -40,27 +40,35 @@ body {
   padding: 1.75rem 2.75rem 1.25rem;
 }
 
-.heading {
-  color: hsl(223, 47%, 23%);
+.card-heading {
   font-size: 1.65rem;
   font-weight: 900;
   padding: 0.25rem 0 0.60rem;
 }
 
-.description {
+.card-heading,
+.plan-name,
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.card-description {
+  margin: auto;
+  max-width: 28ch;
+}
+
+.card-description,
+.plan-price {
   color: hsl(224, 23%, 55%);
   font-size: 0.92rem;
-  max-width: 28ch;
-  margin: auto;
 }
 
 /* Card Plan Section */
 
 .plan-section {
-  align-items: center;
   background-color: hsl(225, 100%, 98%);
   border-radius: 0.75rem;
-  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   margin: 1.25rem 0 1.50rem;
   padding: 1.21rem;
@@ -73,14 +81,8 @@ body {
 }
 
 .plan-name {
-  color: hsl(223, 47%, 23%);
   font-size: 0.95rem;
   font-weight: 700;
-}
-
-.plan-price {
-  color: hsl(224, 23%, 55%);
-  font-size: 0.9rem;
 }
 
 .change-plan {
@@ -96,24 +98,21 @@ body {
 
 /* Card Buttions Section */
 
-.card-form {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .proceed-btn {
   background-color: hsl(245, 75%, 52%);
-  border: none;
   border-radius: 0.5rem;
   box-shadow: -0.25rem 0.45rem 2.5rem hsl(224, 23%, 55%);
   color: hsl(0, 0%, 100%);
-  font-size: 0.9rem;
-  font-weight: 700;
-  padding: 0.75rem;
+  font-size: 0.92rem;
   margin: 0 0 0.5rem;
   width: 100%;
+}
+
+.proceed-btn,
+.cancel-btn {
+  border: none;
+  font-weight: 700;
+  padding: 0.75rem;
 }
 
 .proceed-btn:hover {
@@ -122,18 +121,10 @@ body {
 
 .cancel-btn {
   background-color: transparent;
-  border: none;
   color: hsl(224, 23%, 55%);
   font-size: 0.9rem;
-  font-weight: 700;
-  padding: 0.75rem;
   margin: 0.5rem 0 0;
 }
-
-.cancel-btn:hover {
-  color: hsl(223, 47%, 23%);
-}
-
 
 /* Frontend Mentor Attribution */
 
@@ -163,12 +154,12 @@ body {
   }
 
   /* Card Body Section */
+
   .card-body {
     padding: 1.50rem 1.60rem 1rem;
   }
 
-  .description {
+  .card-description {
     max-width: 25ch;
-    margin: auto;
   }
 }
