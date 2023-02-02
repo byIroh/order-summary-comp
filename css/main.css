@@ -2,19 +2,40 @@ body {
   align-items: center;
   background-color: hsl(225, 100%, 94%);
   display: flex;
+  flex-direction: column;
   font-family: 'Red Hat Display', sans-serif;
   justify-content: center;
   text-align: center;
 }
 
+.bg-pattern-desktop {
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-pattern-mobile {
+  display: none;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
 .card {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   max-width: 24rem;
   overflow: hidden;
 }
 
 /* Card Body Section */
+
 .card-body {
   padding: 1.75rem 2.75rem 1.25rem;
 }
@@ -29,9 +50,12 @@ body {
 .description {
   color: hsl(224, 23%, 55%);
   font-size: 0.92rem;
+  max-width: 28ch;
+  margin: auto;
 }
 
 /* Card Plan Section */
+
 .plan-section {
   align-items: center;
   background-color: hsl(225, 100%, 98%);
@@ -47,6 +71,7 @@ body {
   padding: 0 1.21rem;
   text-align: start;
 }
+
 .plan-name {
   color: hsl(223, 47%, 23%);
   font-size: 0.95rem;
@@ -70,6 +95,7 @@ body {
 }
 
 /* Card Buttions Section */
+
 .card-form {
   align-items: center;
   display: flex;
@@ -81,6 +107,7 @@ body {
   background-color: hsl(245, 75%, 52%);
   border: none;
   border-radius: 0.5rem;
+  box-shadow: -0.25rem 0.45rem 2.5rem hsl(224, 23%, 55%);
   color: hsl(0, 0%, 100%);
   font-size: 0.9rem;
   font-weight: 700;
@@ -101,7 +128,6 @@ body {
   font-weight: 700;
   padding: 0.75rem;
   margin: 0.5rem 0 0;
-  width: 100%;
 }
 
 .cancel-btn:hover {
@@ -110,11 +136,39 @@ body {
 
 
 /* Frontend Mentor Attribution */
+
 .attribution {
+  display: none;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Styles */
+
+@media (max-width: 375px) {
+  .bg-pattern-desktop {
+    display: none;
+  }
+
+  .bg-pattern-mobile {
+    display: block;
+  }
+
+  .card {
+    max-width: 21rem;
+  }
+
+  /* Card Body Section */
+  .card-body {
+    padding: 1.50rem 1.60rem 1rem;
+  }
+
+  .description {
+    max-width: 25ch;
+    margin: auto;
+  }
 }
